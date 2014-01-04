@@ -1,0 +1,21 @@
+.tile {
+	background-color: yellowgreen;
+	border: black;
+	border-width: 5px;
+	border-style: solid;
+	height: 100px;
+	width: 100px;
+	float: left;
+	box-sizing: border-box;
+}
+#wrapper{
+	width:300px;
+}
+
+#winner{
+	width: 265px;
+	height: 100px;
+	top: 100px;
+	left: 363px;
+	position: absolute;
+}

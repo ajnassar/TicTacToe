@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title> Tic Tac Toe </title>
+
+		<link rel="stylesheet" type="text/css" href="tttUI.css">
+
+	  <script type="application/javascript"
+	   src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js">
+	  </script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+	  <script type="application/javascript" src="ticTacToe.js"></script>
+
+		<script type="application/javascript" src="tttUI.js"></script>
+
+		<script>
+		$(function(){
+		  var g = new TTT.Game();
+			var tttUI = new TTT.UI(g, $('.tile'));
+		});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="1" class="tile" data-x='0' data-y='0'></div>
+			<div id="2" class="tile" data-x='1' data-y='0'></div>
+			<div id="3" class="tile" data-x='2' data-y='0'></div>
+			<div id="4" class="tile" data-x='0' data-y='1'></div>
+			<div id="5" class="tile" data-x='1' data-y='1'></div>
+			<div id="6" class="tile" data-x='2' data-y='1'></div>
+			<div id="7" class="tile" data-x='0' data-y='2'></div>
+			<div id="8" class="tile" data-x='1' data-y='2'></div>
+			<div id="9" class="tile" data-x='2' data-y='2'></div>
+		</div>
+		<div id = "winner">
+			<h1 id ="winner-words"></h1>
+		</div>
+	</body>
+</html>
